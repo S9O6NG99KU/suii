@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "ScoutAI",
+    "slug": "scoutai",
+    "version": "1.0.0",
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTabletMode": true,
+      "bundleIdentifier": "com.kinjal.scoutai"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#1B5E20"
+      },
+      "package": "com.kinjal.scoutai",
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.RECORD_AUDIO",
+        "android.permission.INTERNET",
+        "android.permission.ACCESS_NETWORK_STATE"
+      ]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow ScoutAI to access your camera for video analysis"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./src/assets/notification-icon.png",
+          "color": "#1B5E20"
+        }
+      ]
+    ]
+  }
+}
